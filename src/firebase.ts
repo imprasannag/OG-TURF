@@ -4,13 +4,13 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAlGgH_uGPOK4gOP0j1rlXMkRhoBtvHtSM",
-  authDomain: "og-turf.firebaseapp.com",
-  projectId: "og-turf",
-  storageBucket: "og-turf.firebasestorage.app",
-  messagingSenderId: "223032946190",
-  appId: "1:223032946190:web:26262203ce6762054cd65f",
-  measurementId: "G-T7PW5H8SE5"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
